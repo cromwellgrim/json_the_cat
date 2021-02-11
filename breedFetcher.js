@@ -5,9 +5,9 @@ let breedName = args[0];
 let url = 'https://api.thecatapi.com/v1/breeds/search?q=' + breedName;
 
 request(url, function(error, response, body) {
-  if (error != null) {
+  if (error !== null) {
     console.log('error: ', error);
-  };
+  }
   // console.log('body: ', body);
   // console.log('response: ', response.statusCode);
   
